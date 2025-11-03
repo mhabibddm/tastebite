@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | TasteBite Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:Poppins, sans-serif; background:#fffaf3; color:#333;}
+    
+    header, footer {
+      background:#8b0000; 
+      color:white; 
+      text-align:center; 
+      padding:20px;
+    }
+
+    nav ul {
+      display:flex; justify-content:center; gap:20px; list-style:none; flex-wrap:wrap;
+    }
+
+    nav a {
+      color:white; text-decoration:none; font-weight:bold; transition:0.3s;
+    }
+
+    nav a:hover {color:#ffd700;}
+
+    section {
+      padding:60px 20px; 
+      max-width:1100px; 
+      margin:auto; 
+      text-align:center;
+    }
+
+    h2 {color:#8b0000; margin-bottom:20px; font-size:2rem;}
+    p {font-size:1rem; line-height:1.6;}
+
+    .services-grid {
+      display:flex; 
+      flex-wrap:wrap; 
+      justify-content:center; 
+      gap:25px; 
+      margin-top:40px;
+    }
+
+    .service {
+      background:white;
+      border-radius:12px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      padding:20px;
+      width:280px;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform:translateY(-8px);
+      box-shadow:0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .service img {
+      width:100%; 
+      height:180px; 
+      border-radius:10px; 
+      object-fit:cover;
+      margin-bottom:15px;
+    }
+
+    .service h3 {
+      color:#8b0000;
+      margin-bottom:8px;
+      font-size:1.3rem;
+    }
+
+    /* Why Choose Us Section */
+    .why-choose {
+      background:#8b0000;
+      color:white;
+      padding:50px 20px;
+      margin-top:60px;
+      border-radius:12px;
+    }
+
+    .why-choose h2 {
+      color:#ffd700;
+      margin-bottom:25px;
+    }
+
+    .features {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+    }
+
+    .feature {
+      background:white;
+      color:#8b0000;
+      padding:20px;
+      border-radius:10px;
+      width:200px;
+      font-weight:600;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .feature i {
+      font-size:24px;
+      color:#ffd700;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      margin-top:60px;
+    }
+
+    .testimonial {
+      background:white;
+      border-left:5px solid #8b0000;
+      border-radius:10px;
+      padding:20px;
+      max-width:600px;
+      margin:20px auto;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      font-style:italic;
+    }
+
+    .testimonial strong {
+      display:block;
+      margin-top:10px;
+      color:#8b0000;
+      font-style:normal;
+    }
+
+    .cta {
+      margin-top:50px;
+      font-size:1.2rem;
+      background:#ffd700;
+      color:#8b0000;
+      padding:20px;
+      border-radius:10px;
+      display:inline-block;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .cta:hover {
+      background:#8b0000;
+      color:#fff;
+    }
+
+    footer {
+      margin-top:60px;
+      font-size:0.9rem;
+    }
+
+    @media(max-width:768px){
+      nav ul{flex-direction:column;}
+      .features{flex-direction:column; align-items:center;}
+      .service{width:100%;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TasteBite</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <p>At TasteBite, we go beyond serving meals — we create memorable experiences for every occasion.</p>
+
+    <div class="services-grid">
+      <div class="service">
+        <img src="https://images.radio-canada.ca/v1/alimentation/recette/1x1/burger-poulet-croustillant.jpg" alt="Catering">
+        <h3><i class="fa-solid fa-bowl-food"></i> Catering</h3>
+        <p>Perfect meals for weddings, birthdays, and corporate events with delicious menus tailored to your needs.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Delivery">
+        <h3><i class="fa-solid fa-truck"></i> Home Delivery</h3>
+        <p>Fast, reliable, and affordable delivery — bringing your favorite meals right to your doorstep.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=80" alt="Dine In">
+        <h3><i class="fa-solid fa-chair"></i> Dine-In Experience</h3>
+        <p>Enjoy our warm atmosphere, excellent service, and freshly prepared dishes every time.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Online Order">
+        <h3><i class="fa-solid fa-mobile-screen-button"></i> Online Orders</h3>
+        <p>Order easily through our website — quick, secure, and convenient for your busy lifestyle.</p>
+      </div>
+    </div>
+
+    <div class="why-choose">
+      <h2>Why Choose TasteBite?</h2>
+      <div class="features">
+        <div class="feature"><i class="fa-solid fa-leaf"></i> Fresh Ingredients</div>
+        <div class="feature"><i class="fa-solid fa-hand-holding-heart"></i> Friendly Service</div>
+        <div class="feature"><i class="fa-solid fa-dollar-sign"></i> Affordable Prices</div>
+        <div class="feature"><i class="fa-solid fa-broom"></i> Clean Environment</div>
+        <div class="feature"><i class="fa-solid fa-clock"></i> Fast Delivery</div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        “The food was absolutely delicious, and the service was fantastic. Highly recommended!”
+        <strong>— Aisha M.</strong>
+      </div>
+      <div class="testimonial">
+        “TasteBite made our event stress-free with their excellent catering service. Everyone loved it!”
+        <strong>— Usman B.</strong>
+      </div>
+    </div>
+
+    <a href="contact.html" class="cta"><i class="fa-solid fa-phone"></i> Contact Us Today</a>
+  </section>
+
+  <footer>© 2025 TasteBite Restaurant | All Rights Reserved</footer>
+</body>
+</html>
